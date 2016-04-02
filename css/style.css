@@ -6,6 +6,10 @@
 	font-size: 1.5625vw;
 	font-family: "Microsoft Yahei";
 }
+html,
+body{
+	height: 100%;
+}
 /*music*/
 #music{
 	position: fixed;
@@ -32,4 +36,41 @@
 	left: 0;
 	margin:auto;
 	width: 79%;
+}
+
+/*page bg*/
+.page{height: 100%;}
+.page>.bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+/*page1*/
+#page1>.bg{
+	background: url("../images/p1_bg.jpg") no-repeat center center;
+	background-size: 100%;
+}
+#page>.p1_lantern{
+	position: absolute;
+	top:-3.4%;
+	right:0;
+	left: 0px;
+	margin:auto;
+	background: url("../images/p1_lantern.png") no-repeat center center bottom;
+	font-size: 100%
+	width: 45vw;
+	height: 71.2vh;
+	font-size: 2.506rem;
+	padding-top: 31vh;
+	text-align: center;
+}
+/*page2*/
+#page1>.bg{
+	background: url("../images/p2_bg.jpg") no-repeat center center;
+	background-size: 100%;
+}
+/*page3*/
+#page1>.bg{
+	background: url("../images/p3_bg.jpg") no-repeat center center;
+	background-size: 100%;
 }
