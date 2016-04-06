@@ -165,6 +165,7 @@ body{
 	color: #231815;
 }
 /*page2*/
+#page2{display:none}
 #page2>.bg{
 	background: url("../images/p2_bg.jpg") no-repeat center center;
 	background-size: 100%;
@@ -292,7 +293,6 @@ body{
 	height: 6.24vh;
 }
 /*page3*/
-#page3{display:none}
 #page3>.bg{
 	background: url("../images/p3_bg.jpg") no-repeat center center;
 	background-size: 100%;
@@ -348,4 +348,27 @@ body{
 	height: 32vw;
 	background: url("../images/p3_blessing.png") no-repeat center center;
 	background-size:100%;
+	-webkit-animation: p3_blessing 2s linear infinite;
+			animation: p3_blessing 2s linear infinite;
+}
+@-webkit-keyframes p3_blessing{
+	0%{
+		-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+}
+
+@keyframes p3_blessing{
+	0%{
+		-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
 }
