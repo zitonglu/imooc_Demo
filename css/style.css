@@ -88,7 +88,27 @@ body{
     	-ms-box-shadow:0 0 10vw 10vw #d60b3b;
 	     -o-box-shadow:0 0 10vw 10vw #d60b3b;
 		    box-shadow:0 0 10vw 10vw #d60b3b;	
-}	
+}
+#page1>.p1_imooc{
+	position: absolute;
+	right: 0;
+	bottom: 9vh;
+	left: 0;
+	background: url("../images/p1_imooc.png") no-repeat center center;
+	background-size: 100%;
+	width: 27.656vw;
+	height: 18.63vh;
+	margin: auto;
+}
+#page1>.p1_words{
+	font-size: 2.134rem;
+	position: absolute;
+	right: 0;
+	bottom: 48px;
+	left:0;
+	text-align: center;
+	color: #231815;
+}
 /*page2*/
 #page2>.bg{
 	background: url("../images/p2_bg.jpg") no-repeat center center;
