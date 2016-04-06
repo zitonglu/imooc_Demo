@@ -8,26 +8,26 @@ window.onload = function(){
 	},false);
 
 	// 点击音乐图标，控制音乐播放
-	music.onclick = function(){
-		if(audio.paused){
-			audio.play();
-			this.setAttribute("class","play");
-			// this.style.animationPlayState ="running";
-			// 兼容不好
-		}else{
-			audio.pause();
-			this.setAttribute("class","");
-			// this.style.animationPlayState ="paused";
-		};
-	};
-	// audio.addEventListener{"touchstart",function (event) {
-	// 		if(audio.paused){
-	// 			audio.play();
-	// 			this.setAttribute("class","play");
-	// 		}else{
-	// 			audio.pause();
-	// 			this.setAttribute("class","");
-	// 		};
-	// },false};
+	// music.onclick = function(){
+	// 	if(audio.paused){
+	// 		audio.play();
+	// 		this.setAttribute("class","play");
+	// 		// this.style.animationPlayState ="running";
+	// 		// 兼容不好
+	// 	}else{
+	// 		audio.pause();
+	// 		this.setAttribute("class","");
+	// 		// this.style.animationPlayState ="paused";
+	// 	};
+	// };
+	music.addEventListener("touchstart",function (event) {
+			if(audio.paused){
+				audio.play();
+				this.setAttribute("class","play");
+			}else{
+				audio.pause();
+				this.setAttribute("class","");
+			};
+	},false);
 
 };
