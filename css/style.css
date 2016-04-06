@@ -176,6 +176,20 @@ body{
 	-webkit-transform: translate(0,-100%);
 		    transform: translate(0,-100%);
 }
+#page2>.p2_bg_loading{
+	z-index: 4;
+	background: #df1639;
+	-webkit-animation: p2_bg_loading 1s linear forwards;
+	animation: p2_bg_loading 1s linear forwards;
+}
+@-webkit-keyframes p2_bg_loading{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+@keyframes p2_bg_loading{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
 #page2>div.bg{
 	background: url("../images/p2_bg.jpg") no-repeat center center;
 	background-size: 100%;
