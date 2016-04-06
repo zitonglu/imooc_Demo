@@ -311,7 +311,14 @@ body{
 	height: 6.24vh;
 }
 /*page3*/
-#page3{display: none;}
+#page3{display: none;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+#page3.fadeIn{
+	-webkit-transform: translate(0,-100%);
+	transform: translate(0,-100%);
+}
 #page3>.bg{
 	background: url("../images/p3_bg.jpg") no-repeat center center;
 	background-size: 100%;
