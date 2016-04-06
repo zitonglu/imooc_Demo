@@ -9,6 +9,7 @@
 html,
 body{
 	height: 100%;
+	overflow: hidden;
 }
 /*music*/
 .music{
@@ -79,6 +80,7 @@ body{
 	z-index: -1;
 }
 /*page1*/
+#page1{display:block;}
 #page1>.bg{
 	background: url("../images/p1_bg.jpg") no-repeat center center;
 	background-size: 100%;
@@ -164,12 +166,21 @@ body{
 	color: #231815;
 }
 /*page2*/
-#page2{display:none}
-#page2>.bg{
+#page2{
+	display:none;
+	-webkit-transition: .5s;
+		    transition: .5s;
+}
+#page2.fadeOut{
+	opacity: .3;
+	-webkit-transform: translate(0,-100%);
+		    transform: translate(0,-100%);
+}
+#page2>div.bg{
 	background: url("../images/p2_bg.jpg") no-repeat center center;
 	background-size: 100%;
 }
-#page2>.p2_circle{
+#page2>div.p2_circle{
 	position: absolute;
 	top:0;
 	right: 0;
@@ -187,10 +198,14 @@ body{
 @-webkit-keyframes p2_circle_outer{
 	0%{
 		-webkit-transform: rotate(0deg);
+ 		    -ms-transform: rotate(0deg);
+             -o-transform: rotate(0deg);
 				transform: rotate(0deg);
 	}
 	100%{
 		-webkit-transform: rotate(-360deg);
+		 	-ms-transform: rotate(-360deg);
+             -o-transform: rotate(-360deg);
 				transform: rotate(-360deg);
 	}
 }
@@ -198,14 +213,18 @@ body{
 @keyframes p2_circle_outer{
 	0%{
 		-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+		     -o-transform: rotate(0deg);
 				transform: rotate(0deg);
 	}
 	100%{
 		-webkit-transform: rotate(-360deg);
+			-ms-transform: rotate(-360deg);
+		     -o-transform: rotate(-360deg);
 				transform: rotate(-360deg);
 	}
 }
-#page2>.p2_circle:before{
+#page2>div.p2_circle:before{
 	position: absolute;
 	top:0;
 	right: 0;
@@ -242,7 +261,7 @@ body{
 				transform: rotate(720deg);
 	}
 }
-#page2>.p2_circle:after{
+#page2>div.p2_circle:after{
 	position: absolute;
 	top:0;
 	right: 0;
