@@ -63,8 +63,32 @@ body{
 	font-size: 3.506rem;
 	padding-top: 31vh;
 	text-align: center;
-	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+    	-ms-box-sizing:border-box;
+	     -o-box-sizing:border-box;
+		    box-sizing:border-box;
 }
+#page1>.p1_lantern:before{
+	position: absolute;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/*z-index: -1;*/
+	content:"";
+	margin: auto;
+	width: 30vw;
+	height: 30vw;
+	background: #d60b3b;
+	opacity: 0.5;
+	border-radius:50%;
+	-webkit-box-shadow:0 0 10vw 10vw #d60b3b;
+	   -moz-box-shadow:0 0 10vw 10vw #d60b3b;
+    	-ms-box-shadow:0 0 10vw 10vw #d60b3b;
+	     -o-box-shadow:0 0 10vw 10vw #d60b3b;
+		    box-shadow:0 0 10vw 10vw #d60b3b;	
+}	
 /*page2*/
 #page2>.bg{
 	background: url("../images/p2_bg.jpg") no-repeat center center;
