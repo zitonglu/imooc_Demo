@@ -115,6 +115,7 @@ body{
 	color: #231815;
 }
 /*page2*/
+#page2{display: none}
 #page2>.bg{
 	background: url("../images/p2_bg.jpg") no-repeat center center;
 	background-size: 100%;
@@ -173,8 +174,59 @@ body{
 	height: 6.24vh;
 }
 /*page3*/
-#page3{display: none}
 #page3>.bg{
 	background: url("../images/p3_bg.jpg") no-repeat center center;
 	background-size: 100%;
+}
+#page3>.p3_logo{
+	position: absolute;
+	top: 7.82vh;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 34.6875vw;
+	height: 6.327vh;
+	background: url("../images/p3_logo.png") no-repeat center center;
+	background-size:100%; 
+}
+#page3>.p3_title{
+	position: absolute;
+	top: 21vh;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 48.125vw;
+	height: 50vh;
+	background: url("../images/p3_title.png") no-repeat center center;
+	background-size:100%;
+}
+#page3>.p3_couplet_second{
+	position: absolute;
+	top: 25.48vh;
+	left: 3.75vw;
+	width: 22.8125vw;
+	height: 41.652vh;
+	background: url("../images/p3_couplet_second.png") no-repeat center center;
+	background-size:100%;
+}
+#page3>.p3_couplet_first{
+	position: absolute;
+	top: 25.48vh;
+	right: 3.75vw;
+	width: 22.8125vw;
+	height: 41.652vh;
+	background: url("../images/p3_couplet_first.png") no-repeat center center;
+	background-size:100%;
+}
+#page3>.p3_blessing{
+	position: absolute;
+	right: 0;
+	bottom: 10vh;
+	left: 0;
+	margin: auto;
+	border-radius: 50%;
+	width: 32vw;
+	height: 32vw;
+	background: url("../images/p3_blessing.png") no-repeat center center;
+	background-size:100%;
 }
