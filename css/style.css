@@ -11,7 +11,7 @@ body{
 	height: 100%;
 }
 /*music*/
-#music{
+.music{
 	position: fixed;
 	top: 3vh;
 	right: 4vw;
@@ -22,14 +22,14 @@ body{
 	border-radius: 50%;
 	background: #fff;
 }
-#music>img:first-of-type{
+.music>img:first-of-type{
 	position: absolute;
 	top:24%;
 	z-index: 1;
 	right: 2.5%;
 	width: 28.421%;
 }
-#music>img:last-of-type{
+.music>img:last-of-type{
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -40,7 +40,7 @@ body{
 	width: 79%;
 }
 /*music动画*/
-#music>img.play{
+.music>img.play{
 	-webkit-animation: music_disc 4s linear infinite;
 	     -o-animation: music_disc 4s linear infinite;
 	        animation: music_disc 4s linear infinite;
@@ -79,7 +79,6 @@ body{
 	z-index: -1;
 }
 /*page1*/
-#page1{display: none;}
 #page1>.bg{
 	background: url("../images/p1_bg.jpg") no-repeat center center;
 	background-size: 100%;
@@ -293,6 +292,7 @@ body{
 	height: 6.24vh;
 }
 /*page3*/
+#page3{display: none;}
 #page3>.bg{
 	background: url("../images/p3_bg.jpg") no-repeat center center;
 	background-size: 100%;
