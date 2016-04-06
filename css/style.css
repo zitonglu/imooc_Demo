@@ -76,9 +76,9 @@ body{
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	z-index: -1;
 }
 /*page1*/
-#page1{display:none}
 #page1>.bg{
 	background: url("../images/p1_bg.jpg") no-repeat center center;
 	background-size: 100%;
@@ -108,7 +108,7 @@ body{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	/*z-index: -1;*/
+	z-index: -1;
 	content:"";
 	margin: auto;
 	width: 30vw;
@@ -121,6 +121,26 @@ body{
     	-ms-box-shadow:0 0 10vw 10vw #d60b3b;
 	     -o-box-shadow:0 0 10vw 10vw #d60b3b;
 		    box-shadow:0 0 10vw 10vw #d60b3b;	
+	-webkit-animation: p1_lantern .5s infinite alternate;
+	        animation: p1_lantern .5s infinite alternate;
+}
+@-webkit-keyframes p1_lantern{
+	0%{
+		opacity: .5;
+		-webkit-transform: scale(.8,.8);
+				transform: scale(.8,.8);
+	}
+	100%{opacity: 1}
+
+}
+@keyframes p1_lantern{
+	0%{
+		opacity: .5;
+		-webkit-transform: scale(.8,.8);
+				transform: scale(.8,.8);
+	}
+	100%{opacity: 1}
+
 }
 #page1>.p1_imooc{
 	position: absolute;
@@ -202,6 +222,7 @@ body{
 	height: 6.24vh;
 }
 /*page3*/
+#page3{display:none}
 #page3>.bg{
 	background: url("../images/p3_bg.jpg") no-repeat center center;
 	background-size: 100%;
